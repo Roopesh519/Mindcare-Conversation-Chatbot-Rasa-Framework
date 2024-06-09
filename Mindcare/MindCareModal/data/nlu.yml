@@ -1,0 +1,3672 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: default
+    examples: |
+      - hdhs
+      - sjjs
+      - shjdj
+      - hxhjs
+
+  - intent: motivation
+    examples: |
+      - motivate me
+      - tell me motivational quotes
+      - i want to get motivated
+      - i want motivation
+
+  - intent: anxiety
+    examples: |
+      - i have anxiety disorder
+      - i feel like iam having anxiety disorders
+      - anxious
+      - feels like iam having anxiety disorder
+      - How can I manage my anxiety?
+
+  - intent: goodbye
+    examples: |
+      - see ya
+      - bye
+      - goodbye
+      - bye bye
+
+  # - intent: affirm
+  #   examples: |
+  #     - yes
+  #     - y
+  #     - indeed
+  #     - of course
+  #     - that sounds good
+  #     - correct
+  #     - affirm
+  #     - yes, please
+  #     - absolutely
+  #     - sure thing
+  #     - of course
+  #     - affirmative
+  #     - yeah
+  #     - sure
+  #     - yup
+  #     - okay
+  #     - absolutely
+  #     - definitely
+  #     - agreed
+  #     - sure, why not
+  #     - all right
+  #     - certainly
+  #     - for sure
+  #     - absolutely right
+  #     - positive
+  #     - definitely yes
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: music
+    examples: |
+      - based on the mood, recommend me music
+      - based on how iam feeling right now, i want to hear music
+      - recommend me music
+      - i want to listen songs
+      - give me songs
+      - i want to listen music
+      - i want to do some activities
+      - i want to do activity
+      - recommend activity
+      - suggest activities
+
+  - intent: cheer
+    examples: |
+      - cheer me up
+      - make me cheerul.
+      - encourage me.
+
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am great
+      - I am amazing
+      - super stoked
+      - so so perfect
+      - so perfect
+
+  - intent: confirm
+    examples: |
+      - confirm
+      - is that correct?
+      - confirm that
+      - are you sure?
+      - confirm this
+      - is it true?
+      - do you confirm?
+      - can you confirm?
+      - confirm with me
+      - confirm for me
+      - are you certain?
+
+  - intent: yes
+    examples: |
+      - yes
+      - yep
+      - yeah
+      - affirmative
+      - sure
+      - absolutely
+      - indeed
+      - yes, I do
+      - absolutely yes
+      - I agree
+      - definitely
+      - yes, of course
+      - certainly
+      - yes, please
+      - yes, definitely
+      - positively
+      - yup
+      - absolutely right
+      - why not
+      - sure
+      - I'm sure
+      - definitely
+      - for sure
+      - absolutely
+      - why not
+      - sure, why not
+      - go ahead
+      - go for it
+      - sure, go ahead
+      - sure, I'm fine
+      - sure, let's do it
+      - absolutely sure
+      - sure, no problem
+      - sure, anytime
+      - sure, I agree
+      - sure, that works
+
+  - intent: thanks
+    examples: |
+      - thanks
+      - thank you
+      - thanks a lot
+      - thank you very much
+      - thanks so much
+      - thanks a bunch
+      - thanks heaps
+      - thank you loads
+      - thanks a million
+      - thanks tons
+      - thanks heaps
+      - thanks a ton
+      - thanks for your help
+      - thanks for the information
+      - thanks for your assistance
+      - thanks for the support
+      - thanks a million times
+      - big thanks
+      - many thanks
+      - a big thank you
+      - a huge thank you
+      - a heartfelt thank you
+      - thanks a bunch
+      - thanks a million
+      - a big thank you to you
+      - I'm thankful
+      - thanks in advance
+      - thanks for everything
+      - thank you for being so helpful
+      - thank you for your kindness
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: depression
+    examples: |
+      - What are the symptoms of depression?
+      - What are the signs that someone might be experiencing depression?
+
+
+  - intent: stress
+    examples: |
+      - What are some effective stress management strategies?
+      - What are the signs that indicate I'm under a lot of stress?
+
+
+  - intent: panic_attacks
+    examples: |
+      - What should I do if I'm having a panic attack?
+      - What are some symptoms of a panic attack?
+
+  - intent: bipolar_disorder
+    examples: |
+      - How can I support someone with bipolar disorder?
+      - How do I recognize bipolar disorder in someone?
+
+  - intent: obsessive_compulsive_disorder
+    examples: |
+      - What are some coping strategies for OCD?
+      - How can I identify OCD symptoms?
+
+  - intent: post_traumatic_stress_disorder
+    examples: |
+      - How can I manage PTSD symptoms?
+      - What are the signs that someone might be suffering from PTSD?
+
+  - intent: eating_disorders
+    examples: |
+      - What are the signs of an eating disorder?
+      - How do you know if someone has an eating disorder?
+
+  - intent: substance_abuse
+    examples: |
+      - How can I support someone struggling with substance abuse?
+      - How can I tell if someone is abusing substances?
+
+
+  - intent: self_harm
+    examples: |
+      - What should I do if I or someone I know is self-harming?
+      - How can I identify signs of self-harm in someone?
+
+  - intent: suicidal_thoughts
+    examples: |
+      - What should I do if I'm having suicidal thoughts?
+      - I want to commit suicide.
+      - i want to kill myself.
+
+  - intent: body_image_issues
+    examples: |
+      - How can I improve my body image?
+      - How can I know if I have body image issues?
+
+  - intent: loneliness
+    examples: |
+      - What are some ways to cope with loneliness?
+      - iam feeling lonely.
+
+  - intent: grief
+    examples: |
+      - How can I cope with the loss of a loved one?
+      - I have lost someone i love.
+      - Lost a loved one.
+
+  - intent: relationship_issues
+    examples: |
+      - How can I improve my relationships?
+      - i had a fight with my girlfriend.
+      - Recently broke up.
+      - Went through a tough breakup.
+
+  - intent: parenting_challenges
+    examples: |
+      - How can I cope with the challenges of parenting?
+      - facing difficulties in parenting.
+
+  - intent: financial_stress
+    examples: |
+      - What are some ways to cope with financial stress?
+      - i have financial problems.
+
+  - intent: insomnia
+    examples: |
+      - How can I improve my sleep quality?
+      - i cannot sleep.
+
+  - intent: phobias
+    examples: |
+      - What are some strategies for overcoming phobias?
+      - i have different phobias.
+
+  - intent: personality_disorders
+    examples: |
+      - How can I support someone with a personality disorder?
+      - What are some behaviors that might indicate someone has a personality disorder?
+
+  - intent: attention_deficit
+    examples: |
+      - What are some strategies for managing attention deficit symptoms?
+      - How can I recognize if I'm dealing with ADHD symptoms?
+
+  - intent: schizophrenia
+    examples: |
+      - How can I support someone with schizophrenia?
+      - How can I tell if someone has schizophrenia?
+
+  - intent: borderline_personality_disorder
+    examples: |
+      - How can I cope with intense emotions associated with borderline personality disorder or BPD?
+      - What are some indicators that someone might have borderline personality disorder?
+
+  - intent: social_anxiety
+    examples: |
+      - What are some strategies for coping with social anxiety?
+      - i have social anxiety disorder.
+
+  - intent: sad
+    examples: |
+      - I'm feeling sad
+      - This is so sad
+      - I feel down
+      - Life is tough right now
+      - Everything feels overwhelming
+      - I'm not in a good mood
+      - Feeling low today
+      - It's a sad day
+      - I feel a bit gloomy
+      - Things are not going well
+      - I'm feeling really sad today
+      - This situation makes me so sad
+      - It's hard to shake off this feeling of sadness
+      - Feeling down and don't know how to lift my spirits
+      - Life has been tough lately, and I'm quite sad about it
+      - I'm in a bit of a gloomy mood right now
+      - Dealing with some personal issues and feeling really sad
+      - It's one of those days where everything feels heavy
+      - Feeling a deep sense of sadness that I can't explain
+      - The recent events have left me feeling quite sad
+      - I can't help but feel sad about what's happening in the world
+      - Just got some bad news, and I'm feeling really sad
+      - Feeling a bit overwhelmed, and it's making me sad
+      - It's been a challenging week, and I'm feeling sad
+      - I'm experiencing a lot of sadness, and I don't know how to cope
+      - Sometimes, the weight of everything makes me feel really sad
+      - I could use some comforting words; feeling really sad
+      - Everything seems gray, and I can't shake off this sadness
+      - My heart is heavy, and I can't seem to shake off this sadness
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - extremely sad
+      - so sad
+      - sorrowful
+      - heartbroken
+      - overwhelmed
+      - gloomy
+      - mournful
+      - Feeling down today.
+      - Dealing with a loss, and it's making me sad.
+      - Lately, I've been overwhelmed with sadness.
+      - Feeling a bit blue.
+      - I feel really sad right now
+      - Today has been a tough day, feeling sad
+      - Just received some bad news, feeling sad
+      - Dealing with a personal loss, feeling very sad
+      - I'm feeling down and discouraged
+      - Going through a difficult time, feeling really sad
+      - Received disappointing results, feeling sad
+      - Frustrated and sad
+      - Feeling low and defeated
+      - Facing challenges, feeling sad
+      - Just faced a major setback, feeling really sad
+      - Feeling overwhelmed and sad
+      - Going through a tough phase, feeling really sad
+      - Received some heartbreaking news, feeling sad
+      - Dealing with a personal crisis, feeling very sad
+      - Just faced a major disappointment, feeling sad
+      - Feeling disheartened and defeated
+      - Recently lost a job, feeling sad
+      - Going through emotional pain, feeling very sad
+      - Just got bad feedback, feeling sad
+      - Received negative comments, feeling really sad
+      - Just experienced a setback, feeling sad
+      - Going through a tough time emotionally, feeling very sad
+      - Just faced rejection, feeling sad
+      - Dealing with personal struggles, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad.
+      -  Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just received disappointing news, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just received disappointing news, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just received disappointing news, feeling sad
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just experienced a letdown, feeling sad
+      - Just faced a major disappointment, feeling sad
+      - Recently experienced a setback, feeling very sad
+      - Feeling demoralized and defeated
+      - Just lost a job, feeling sad
+      - Going through emotional pain, feeling very sad
+      - Just got bad feedback, feeling sad
+      - Received negative comments, feeling really sad
+      - Just experienced a setback, feeling sad
+      - Going through a tough time emotionally, feeling very sad
+      - Just faced rejection, feeling sad
+      - Recently experienced a letdown, feeling very sad
+      - Dealing with personal struggles, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      -  Going through work-related stress, feeling very sad
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Just faced rejection, feeling sad
+      - Dealing with a tough divorce, feeling very sad
+      - Just experienced a letdown, feeling sad
+      - Just faced a major disappointment, feeling sad
+      - Recently experienced a setback, feeling very sad
+      - Just lost a job, feeling sad
+      - Going through emotional pain, feeling very sad
+      - Just got bad feedback, feeling sad
+      - Received negative comments, feeling really sad
+      - Just experienced a setback, feeling sad
+      - Going through a tough time emotionally, feeling very sad
+      - Just faced rejection, feeling sad
+      - Recently experienced a letdown, feeling very sad
+      - Dealing with personal struggles, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      - Just received disappointing news, feeling sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Just received some disappointing results, feeling sad
+      - Going through work-related stress, feeling very sad
+      - Just faced rejection, feeling sad
+      - Just experienced a letdown, feeling sad
+      - Just faced a major disappointment, feeling sad
+      - Recently experienced a setback, feeling very sad
+      - Feeling demoralized and defeated
+      - Just lost a job, feeling sad
+      - Going through emotional pain, feeling very sad
+      - Just got bad feedback, feeling sad
+      - Received negative comments, feeling really sad
+      - Just experienced a setback, feeling sad
+      - Going through a tough time emotionally, feeling very sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Feeling heartbroken and desolate
+      - Just received some disappointing results, feeling sad
+      - Just faced rejection, feeling sad
+      - Just experienced a letdown, feeling sad
+      - Feeling overwhelmed by sadness and grief
+      - Just faced a major disappointment, feeling sad
+      - Recently experienced a setback, feeling very sad
+      - Feeling demoralized and defeated
+      - Just lost a job, feeling sad
+      - Going through emotional pain, feeling very sad
+      - Just got bad feedback, feeling sad
+      - Received negative comments, feeling really sad
+      - Just experienced a setback, feeling sad
+      - Going through a tough time emotionally, feeling very sad
+      - Just faced rejection, feeling sad
+      - Dealing with personal struggles, feeling sad
+      - Just received disappointing news, feeling sad
+      - Feeling overwhelmed by sadness
+      - Just faced a major obstacle, feeling sad
+      - Received negative results, feeling sad
+      - Dealing with emotional distress, feeling very sad
+      - Just got some bad news, feeling sad
+      - Going through a difficult phase in life, feeling really sad
+      - Feeling defeated and overwhelmed by sadness
+      - Just experienced a hardship, feeling sad
+      - Recently faced a personal setback, feeling very sad
+      - Feeling heartbroken and desolate
+      - Just received some disappointing results, feeling sad
+      - Just faced rejection, feeling sad
+
+  - intent: sad_inform
+    examples: |
+      - I just received a low grade.
+      - Academic pressure.
+      - Homesickness is making it hard for me to focus on my studies.
+      - Feeling overwhelmed with family expectations for my grades.
+      - I have a conflict with a friend, and it's causing me emotional distress.
+      - Balancing part-time work and studies is taking a toll on my well-being.
+      - Struggling to adjust to a new academic environment.
+      - I'm feeling lost and uncertain about my future career path.
+      - Recently experienced a traumatic event, and it's impacting my daily life.
+      - Feeling isolated and having difficulty making friends on campus.
+      - I'm experiencing burnout from constant academic demands.
+      - Dealing with procrastination and time management issues.
+      - Concerns about my academic performance affecting my mental health.
+      - Feeling overwhelmed by the workload and expectations from professors.
+      - The transition to online learning.
+      - I'm questioning my major and need guidance on making a decision.
+      - Balancing extracurricular activities with academics is challenging.
+      - Coping with the pressure to maintain a high GPA.
+      - Concerns about graduation and entering the job market.
+      - Struggling with perfectionism and fear of failure.
+      - I have difficulty concentrating during online classes.
+      - Feeling unprepared for exams and need study tips.
+      - Coping with a chronic health condition while attending school.
+      - Dealing with a toxic friendship and need advice on how to handle it.
+      - I'm questioning my identity and need support in self-discovery.
+      - Feeling overwhelmed by societal expectations and stereotypes.
+      - Dealing with a difficult professor and need advice on how to communicate.
+      - Struggling with time management and maintaining a healthy work-life balance.
+      - I'm dealing with cultural adjustment issues as an international student.
+      - Concerns about finding a suitable internship or job opportunity.
+      - I have difficulty asking for help and expressing my needs.
+      - Coping with the pressure to conform to societal standards.
+      - I had a bad day at work
+      - Received some bad news
+      - Went through a tough time
+      - Having a difficult period
+      - Just got rejected, feeling sad
+      - Feeling blue today
+      - Feeling low and discouraged
+      - Received disappointing news
+      - Feeling upset about something
+      - Going through a tough phase
+      - Feeling gloomy and downcast
+      - Recently experienced a setback
+      - Feeling sorrowful and disheartened
+      - Feeling dispirited and down
+      - Going through a difficult time
+      - Feeling down in the dumps
+      - Recently faced a disappointment
+      - Got laid off, feeling sad
+      - Received a rejection letter
+      - Lost a friendship, feeling down
+      - Going through a family crisis
+      - Feeling hopeless and sad
+      - Recently faced a failure
+      - Feeling defeated and sad
+      - Received a negative diagnosis
+      - Going through a tough divorce
+      - Feeling rejected and sad
+      - Feeling overwhelmed by responsibilities
+      - Just got bad feedback
+      - Going through a health issue
+      - Feeling isolated and sad
+      - Facing academic challenges, feeling sad
+      - Experienced a personal setback
+      - Just lost a competition, feeling down
+      - Received criticism, feeling sad
+      - Feeling lost and sad
+      - Faced a major disappointment
+      - Recently faced rejection, feeling sad
+      - Dealing with a difficult situation
+      - Feeling drained and sad
+      - Lost a valuable possession, feeling down
+      - Received negative feedback, feeling sad
+      - Going through emotional pain
+      - Feeling sorrowful and defeated
+      - Recently faced a setback, feeling sad
+      - Dealing with a health challenge
+      - Feeling discouraged and disheartened
+      - Just faced a major obstacle, feeling down
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Recently experienced a letdown, feeling sad
+      - Dealing with personal struggles
+      - heartbroken and desolate
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - heartbroken and desolate
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - heartbroken and desolate
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - heartbroken and desolate
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Feeling shattered and disheartened
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+      - Recently experienced a setback, feeling down
+      - Dealing with personal challenges
+      - Feeling sorrowful and defeated
+      - Just faced a major obstacle, feeling disheartened
+      - Received disappointing results
+      - Going through a tough phase in life
+      - Feeling overwhelmed and defeated
+      - Dealing with personal struggles
+      - Just got bad news, feeling disheartened
+      - Faced rejection, feeling upset
+      - Recently experienced a hardship
+      - Lost an opportunity, feeling down
+      - Received negative comments, feeling sad
+      - Dealing with emotional distress
+      - Feeling dejected and defeated
+      - Just faced a personal setback, feeling sad
+      - Recently experienced a disappointment, feeling sad
+      - Feeling beaten down and discouraged
+      - Just received bad news, feeling sad
+      - Faced rejection, feeling disheartened
+      - Going through a difficult phase, feeling sad
+      - Feeling defeated and overwhelmed
+
+  - intent: happy
+    examples: |
+      - iam happy
+      - iam very happy today
+      - really happy
+      - Feeling ecstatic and overjoyed today 
+      - Just got great news, feeling incredibly happy 
+      - Celebrating a major achievement, feeling ecstatic 
+      - Enjoying a wonderful day and feeling happy 
+      - Received positive feedback, feeling on top of the world 
+      - Excited about upcoming plans, feeling happy 
+      - Surrounded by loved ones, feeling pure happiness 
+      - Successfully accomplished a goal, feeling elated 
+      - Grateful for the little joys in life, feeling happy 
+      - Feeling cheerful and optimistic today 
+      - Just had a fantastic day, feeling joyful 
+      - Achieved something I've been working on, feeling ecstatic 
+      - Surprised with a thoughtful gesture, feeling delighted 
+      - Enjoying the sunshine and feeling happy 
+      - Feeling blessed and content with life 
+      - Just received good news, feeling overjoyed 
+      - Spending quality time with family, feeling happy 
+      - Accomplished a personal milestone, feeling proud and happy 
+      - Feeling uplifted and cheerful today 
+      - Grateful for the positive people in my life, feeling happy 
+      - Just experienced a heartwarming moment, feeling happy 
+      - Reached a new level of success, feeling ecstatic 
+      - Embracing the present moment, feeling happy 
+      - Achieved a long-awaited goal, feeling thrilled 
+      - Surrounded by positive energy, feeling happy 
+      - Just had a great conversation, feeling elated 
+      - Excited about the future, feeling happy 
+      - Successfully completed a project, feeling satisfied and happy 
+      - Enjoying the simple pleasures, feeling content and happy 
+      - Received unexpected good news, feeling ecstatic 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy  
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy,feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy  
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy  
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy 
+      - Successfully navigated a challenge, feeling triumphant and happy 
+      - Received a compliment that made my day, feeling happy 
+      - Just achieved a big milestone, feeling jubilant 
+      - Enjoying the company of friends, feeling happy 
+      - Grateful for the support and love, feeling happy 
+      - Embracing a sense of accomplishment, feeling happy 
+      - Just had a heartwarming encounter, feeling delighted 
+      - Achieved a personal best, feeling on cloud nine 
+      - Surrounded by good vibes, feeling happy 
+      - Successfully completed a difficult task, feeling satisfied and happy 
+      - Feeling a deep sense of joy and fulfillment 
+      - Just received a pleasant surprise, feeling ecstatic 
+      - Celebrating a happy moment, feeling overjoyed 
+      - Embracing the positive energy, feeling happy 
+      - Successfully overcame a challenge, feeling proud and happy 
+      - Feeling on top of the world after a great achievement 
+      - Just had a joyful experience, feeling elated 
+      - Grateful for the love and positivity in my life, feeling happy 
+      - Surrounded by uplifting moments, feeling joyful 
+      - Successfully accomplished a long-term goal, feeling ecstatic 
+      - Enjoying the beauty of the present moment, feeling happy 
+      - Feeling grateful for the abundance of joy in my life 
+      - Just accomplished something meaningful, feeling happy 
+      - Celebrating a personal victory, feeling overjoyed 
+      - Surrounded by laughter and good vibes, feeling happy 
+      - Embracing the positivity around me, feeling happy
+
+  - intent: happy_inform
+    examples: |
+      - Feeling great today!
+      - Just had an amazing day at work
+      - Celebrating a personal achievement
+      - Enjoying a sunny day
+      - Feeling positive and cheerful
+      - Delighted by a surprise gift
+      - Excited about the weekend plans
+      - Grateful for the little things in life
+      - Basking in the joy of a good book
+      - Feeling content and satisfied
+      - Proud of recent accomplishments
+      - Thrilled about a successful project
+      - Experiencing pure happiness
+      - Feeling elated and carefree
+      - Radiating positivity and good vibes
+      - Loving the positive energy around me
+      - Cherishing the present moment
+      - Just received some good news
+      - Enjoying the simple pleasures of life
+      - Surrounded by laughter and happiness
+      - Feeling on top of the world
+      - Grateful for supportive friends
+      - Celebrating a joyful occasion
+      - Just experienced something uplifting
+      - Feeling blessed and happy
+      - Enjoying the beauty of life
+      - Embracing the warmth of happiness
+      - Radiant with joy and positivity
+      - Excited about upcoming adventures
+      - Feeling light-hearted and cheerful
+      - Delighted by a pleasant surprise
+      - Celebrating the success of a friend
+      - Loving the positive atmosphere
+      - Experiencing a sense of accomplishment
+      - Proud of personal growth and progress
+      - Feeling grateful for the people I have
+      - Just had a heartwarming moment
+      - Enjoying the company of loved ones
+      - Surrounded by good energy
+      - Feeling happy and fulfilled
+      - Celebrating a happy milestone
+      - Just achieved something meaningful
+      - Excited about future possibilities
+      - Radiating happiness and positivity
+      - Thrilled about a new opportunity
+      - Feeling on cloud nine
+      - Grateful for the love in my life
+      - Celebrating the joy of friendship
+      - Just had a genuinely happy moment
+      - Enjoying the little moments of joy
+      - Surrounded by positive vibes
+      - Feeling optimistic about the future
+      - Proud of personal achievements
+      - Excited about a new chapter in life
+      - Radiant with happiness and joy
+      - Thrilled about recent successes
+      - Experiencing a sense of fulfillment
+      - Feeling grateful for the present
+      - Celebrating the beauty of life
+      - Just accomplished a happy goal
+      - Enjoying the positive vibes around
+      - Surrounded by laughter and joy
+      - Feeling on top of the world
+      - Grateful for the love and support
+      - Celebrating the goodness in life
+      - Just had a heartwarming experience
+      - Excited about the happiness ahead
+      - Radiating positive energy
+      - Thrilled about a happy surprise
+      - Feeling grateful for the blessings
+      - Proud of personal achievements
+      - Enjoying the happiness in the air
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the joy of achievement
+      - Just experienced a happy moment
+      - Excited about the positive energy
+      - Radiant with joy and happiness
+      - Thrilled about a successful journey
+      - Feeling grateful for the support
+      - Proud of overcoming challenges
+      - Enjoying the simple joys of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something happy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - Feeling on top of the world
+      - Celebrating the joy of existence
+      - Just accomplished a happy goal
+      - Excited about the happy times
+      - Radiating positive energy
+      - Thrilled about a joyful experience
+      - Feeling grateful for the love and support
+      - Proud of personal accomplishments
+      - Enjoying the happiness around
+      - Surrounded by uplifting moments
+      - Feeling on cloud nine
+      - Celebrating the beauty of life
+      - Just experienced a truly happy moment
+      - Excited about the positive vibes
+      - Radiant with joy and contentment
+      - Thrilled about a successful journey
+      - Feeling grateful for the support and love
+      - Proud of overcoming challenges
+      - Enjoying the simple pleasures of life
+      - Surrounded by love and happiness
+      - Feeling on top of the world
+      - Celebrating personal victories
+      - Just accomplished something that brings joy
+      - Excited about the good times ahead
+      - Radiating positive vibes
+      - Thrilled about a happy occasion
+      - Feeling grateful for the joy in life
+      - Proud of personal growth
+      - Enjoying the happiness around
+      - Surrounded by laughter and positivity
+      - Feeling on cloud nine
+      - Celebrating the happiness within
+      - Just had a heartwarming moment
+      - Excited about the positive moments
+      - Radiant with joy and fulfillment
+      - Thrilled about a successful endeavor
+      - Feeling grateful for the positivity
+      - Proud of personal achievements
+      - Enjoying the happy moments in life
+      - Surrounded by love and good vibes
+      - I spent quality time with loved ones today.
+      - I accomplished a goal I've been working towards.
+      - The weather outside is beautiful.
+      - I received a compliment that made my day.
+      - I had a delicious meal that satisfied my cravings.
+      - I woke up feeling refreshed and energized.
+      - I made someone else smile or laugh.
+      - I experienced a moment of gratitude for the little things.
+      - I enjoyed a peaceful moment of solitude.
+      - I learned something new and exciting.
+      - I indulged in my favorite hobby or pastime.
+      - I received good news about something important to me.
+      - I had a productive day and checked off many tasks from my to-do list.
+      - I connected with an old friend or made a new one.
+      - I felt inspired by someone's story or achievements.
+      - I experienced a random act of kindness.
+      - I witnessed a beautiful sunrise or sunset.
+      - I had a good laugh at a funny joke or meme.
+      - I received unexpected recognition for my efforts.
+      - I felt a sense of accomplishment from overcoming a challenge.
+      - I received a heartfelt hug from someone I care about.
+      - I enjoyed a moment of peace and quiet in nature.
+      - I received a message or call from someone I've been missing.
+      - I felt proud of myself for staying true to my values.
+      - I had a good workout that left me feeling strong and healthy.
+      - I got lost in a captivating book or movie.
+      - I felt the warmth of the sun on my skin.
+      - I had a good hair day or felt confident in my appearance.
+      - I received encouragement or support from someone close to me.
+      - I felt a sense of belonging and connection within my community.
+      - I made progress towards a long-term goal or dream.
+      - I shared a laugh with coworkers or classmates.
+      - I had a delicious treat that satisfied my sweet tooth.
+      - I received positive feedback on something I've been working on.
+      - I enjoyed a relaxing bath or shower.
+      - I felt inspired by nature's beauty.
+      - I received a heartfelt thank-you from someone I helped.
+      - I had a good night's sleep and woke up feeling refreshed.
+      - I engaged in a meaningful conversation with someone I care about.
+      - I felt the thrill of adrenaline from trying something new or exciting.
+      - I received a surprise gift that brightened my day.
+      - I witnessed an act of kindness between strangers.
+      - I felt a sense of progress in my personal growth journey.
+      - I took time to appreciate the beauty of art or music."
+      - I experienced a moment of pure joy with a pet.
+      - I received good news about a friend or family member's success.
+      - I had a good cry and felt emotionally cleansed afterward.
+      - I enjoyed a delicious cup of coffee or tea.
+      - I received recognition for my hard work or dedication.
+      - I felt the rush of endorphins after exercising.
+      - I had a good conversation with someone who truly listened.
+      - I felt grateful for my health and well-being.
+      - I accomplished a small task that had been weighing on my mind.
+      - I felt inspired by a quote or motivational message.
+      - I enjoyed a moment of silence and reflection.
+      - I received forgiveness or reconciled with someone.
+      - I had a laugh at a funny memory from the past.
+      - I received a warm embrace from a loved one.
+      - I felt a sense of purpose and fulfillment in my activities.
+      - I received positive feedback on a creative project.
+      - I connected with my spirituality or practiced mindfulness.
+      - I felt a sense of freedom and liberation.
+      - I received good news about a project or endeavor I'm involved in.
+      - I enjoyed a leisurely stroll in a scenic location.
+      - I felt a sense of unity and camaraderie with others.
+      - I received validation for my feelings and experiences.
+      - I experienced a moment of awe or wonder.
+      - I enjoyed a delicious home-cooked meal.
+      - I received a pat on the back for a job well done.
+      - I felt the excitement of planning a future adventure.
+      - I received encouragement to pursue my passions and dreams.
+      - I experienced the joy of giving to others.
+      - I felt a sense of accomplishment from decluttering or organizing my space.
+      - I received support from a mentor or role model.
+      - I enjoyed a moment of laughter with family or friends.
+      - I felt a sense of renewal and fresh perspective after a challenging time.
+      - I received a kind gesture from a stranger.
+      - I felt a deep sense of love and connection with someone special.
+      - I enjoyed a moment of nostalgia reminiscing about happy memories.
+      - I received positive feedback on my creativity or ideas.
+      - I felt a sense of pride in my cultural heritage.
+      - I experienced the joy of helping someone in need.
+      - I received reassurance during a moment of doubt or uncertainty.
+      - I enjoyed the simple pleasure of a warm embrace or cuddle.
+      - I felt a sense of accomplishment from learning a new skill.
+      - I received recognition for my contributions to a team or group.
+      - I enjoyed a moment of serenity in a peaceful environment.
+      - I received support and encouragement during a challenging time.
+      - I felt a sense of empowerment from standing up for myself or others.
+      - I enjoyed a moment of laughter at a silly joke or prank.
+      - I received encouragement to pursue my passions and interests.
+      - I felt a sense of satisfaction from completing a task or project.
+      - I experienced the joy of spontaneous adventure.
+      - I received forgiveness or made amends with someone.
+      - I enjoyed a moment of tranquility in nature.
+      - I received validation for my thoughts and feelings.
+      - I felt the warmth of a cozy blanket or sweater.
+      - I experienced the joy of a shared experience with loved ones.
+      - I received support and understanding during a difficult moment.
+      - I enjoyed a moment of peace and relaxation.
+      - I received words of wisdom or guidance from a mentor.
+      - I felt a sense of accomplishment from overcoming a fear or obstacle.
+      - I experienced the joy of a heartfelt conversation with a friend.
+      - I received encouragement to pursue my goals and dreams.
+      - I enjoyed a moment of laughter at a funny movie or TV show.
+      - I felt a sense of pride in my personal growth and development.
+      - I received a warm smile from a stranger.
+      - I experienced the joy of spontaneous laughter.
+      - I received praise for my creativity or unique perspective.
+      - I enjoyed a moment of contentment in the present moment.
+
+  - intent: angry
+    examples: |
+      - iam angry
+      - very angry
+      - I'm so frustrated right now!
+      - This is really ticking me off.
+      - I can't believe this! It's making me mad.
+      - I'm getting really angry about this.
+      - This is making my blood boil!
+      - I'm at my wit's end with this.
+      - I'm so annoyed right now.
+      - I'm starting to lose my temper.
+      - This is driving me crazy!
+      - I'm really peeved about this.
+      - I'm reaching my boiling point.
+      - I'm so fed up with this nonsense!
+      - This is getting on my nerves.
+      - I'm getting seriously agitated.
+      - I'm on the verge of snapping.
+      - I'm getting worked up over this.
+      - I'm seething with anger!
+      - I'm about ready to explode!
+      - I'm seeing red right now.
+      - I'm about to lose it.
+      - I'm so furious!
+      - I'm feeling really heated.
+      - I'm getting really irritated.
+      - I'm so angry I can't even think straight.
+      - I'm getting really riled up.
+      - This is really getting under my skin.
+      - I'm so worked up about this!
+      - I'm really steamed!
+      - I'm absolutely livid!
+      - I'm about to blow a gasket!
+      - I'm feeling really hostile right now.
+      - I'm so exasperated!
+      - I'm feeling really wound up.
+      - I'm getting so upset!
+      - I'm really on edge!
+      - I'm so annoyed I can't even deal.
+      - I'm at the end of my rope!
+      - I'm getting really hot under the collar.
+      - I'm so irritated I could scream!
+      - I'm about to go off!
+      - I'm feeling really infuriated.
+      - I'm so enraged!
+      - I'm really seeing black right now.
+      - I'm so worked up I can't even handle it.
+      - I'm really fuming!
+      - I'm about to lose my cool.
+      - I'm feeling really wound up!
+      - I'm so fed up I could explode!
+      - I'm feeling really incensed.
+      - I'm so frustrated I could cry!
+      - I'm absolutely seething!
+      - I'm feeling really irate.
+      - I'm about to reach my breaking point.
+      - I'm so aggravated right now!
+      - I'm feeling really infuriated.
+      - I'm about ready to tear my hair out!
+      - I'm so mad I can't even think straight.
+      - I'm absolutely boiling over!
+      - I'm feeling really inflamed.
+      - I'm about to blow my top!
+      - I'm so worked up I'm shaking!
+      - I'm absolutely beside myself with anger!
+      - I'm feeling really riled up.
+      - I'm about to see red!
+      - I'm so heated right now!
+      - I'm absolutely at my breaking point!
+      - I'm feeling really vexed.
+      - I'm about to lose my mind!
+      - I'm so irritated I can't even stand it.
+      - I'm absolutely at my wits' end!
+      - I'm feeling really wrathful.
+      - I'm about to flip out!
+      - I'm so enraged I could scream!
+      - I'm absolutely at the end of my tether!
+      - I'm feeling really irked.
+      - I'm about to blow a fuse!
+      - I'm so furious I can't even speak!
+      - I'm absolutely seeing black!
+      - I'm feeling really hot under the collar.
+      - I'm about to go ballistic!
+      - I'm so angry I can't even see straight.
+      - I'm absolutely boiling mad!
+      - I'm feeling really frenzied.
+      - I'm about to lose my temper!
+      - I'm so worked up I could punch something!
+      - I'm absolutely ready to explode!
+      - I'm feeling really inflamed.
+      - I'm about to blow my lid!
+      - I'm so furious I'm shaking!
+      - I'm absolutely beside myself with rage!
+      - I'm feeling really steamed up.
+      - I'm about to go off the deep end!
+      - I'm so irritated I could scream!
+      - I'm absolutely at my wit's end!
+      - I'm feeling really wrathful.
+      - I'm about to snap!
+      - I'm so furious I could spit nails!
+      - I'm absolutely seeing red!
+      - I'm feeling really hot and bothered.
+      - I'm about to lose it completely!
+
+  - intent: angry_inform
+    examples: |
+      - Being treated unfairly
+      - Receiving criticism or negative feedback
+      - Feeling disrespected
+      - Facing discrimination or prejudice
+      - Experiencing betrayal or deception
+      - Dealing with incompetence or inefficiency
+      - Feeling ignored or overlooked
+      - Being interrupted or talked over
+      - Facing personal attacks or insults
+      - Experiencing a loss or failure
+      - Dealing with rude or impolite behavior
+      - Feeling misunderstood or misrepresented
+      - Being blamed for something you didn't do
+      - Experiencing injustice or inequality
+      - Dealing with dishonesty or lies
+      - Facing obstacles or setbacks
+      - Experiencing a lack of support or understanding
+      - Feeling invalidated or belittled
+      - Being taken advantage of or exploited
+      - Dealing with broken promises or commitments
+      - Feeling powerless or helpless in a situation
+      - Experiencing a sense of betrayal by a friend or loved one
+      - Dealing with excessive stress or pressure
+      - Feeling overwhelmed by responsibilities
+      - Experiencing financial difficulties or hardships
+      - Dealing with chronic pain or health issues
+      - Feeling ignored or dismissed by authority figures
+      - Experiencing unfair treatment in the workplace
+      - Dealing with rude or inconsiderate customer service
+      - Feeling excluded or left out of social activities
+      - Experiencing betrayal by a trusted colleague or partner
+      - Dealing with disrespectful behavior from children or teenagers
+      - Feeling disregarded or marginalized due to one's identity
+      - Experiencing a loss of control over a situation
+      - Dealing with a lack of appreciation or recognition for one's efforts
+      - Feeling trapped in a difficult or toxic relationship
+      - Experiencing road rage or traffic-related frustrations
+      - Dealing with noisy or disruptive neighbors
+      - Feeling unfairly criticized or judged by others
+      - Experiencing repeated failures or setbacks in personal goals
+      - Dealing with unmet expectations in relationships or friendships
+      - Feeling betrayed by a business partner or employer
+      - Experiencing rejection or abandonment by someone important
+      - Dealing with gossip or rumors spread about oneself
+      - Feeling invalidated or dismissed in a group setting
+      - Experiencing a lack of progress or growth in one's career
+      - Dealing with unresponsive or unhelpful customer support
+      - Feeling manipulated or controlled by others
+      - Experiencing difficulties in navigating bureaucratic systems
+      - Dealing with repeated instances of disrespect or disregard
+      - Feeling overwhelmed by negative emotions or thoughts
+      - Experiencing loss of personal space or boundaries
+      - Dealing with frequent interruptions or distractions
+      - Feeling isolated or lonely in social situations
+      - Experiencing unfair treatment based on appearance or physical attributes
+      - Dealing with excessive workload or demands at work or school
+      - Feeling rejected or unloved in romantic relationships
+      - Experiencing a lack of empathy or understanding from others
+      - Dealing with discrimination or harassment in the workplace
+      - Feeling judged or criticized for personal beliefs or values
+      - Experiencing setbacks or failures in personal projects or hobbies
+      - Dealing with confrontational or aggressive behavior from others
+      - Feeling invalidated or dismissed by medical professionals
+      - Experiencing difficulties in accessing necessary resources or support
+      - Dealing with disruptions or delays in travel plans
+      - Feeling overwhelmed by household chores or responsibilities
+      - Experiencing repeated instances of disrespect or disregard in public spaces
+      - Dealing with unfair treatment in legal or justice systems
+      - Feeling unsupported or unappreciated by family members
+      - Experiencing difficulties in communication or expressing oneself effectively
+      - Dealing with repeated instances of betrayal or disloyalty from friends
+      - Feeling overwhelmed by societal expectations or norms
+      - Experiencing a lack of fairness or equity in distribution of resources
+      - Dealing with intrusive or invasive questions from others
+      - Feeling disregarded or dismissed by authority figures or institutions
+      - Experiencing difficulties in setting boundaries with others
+      - Dealing with unmet promises or commitments from others
+      - Feeling frustrated by lack of progress or improvement in personal circumstances
+      - Experiencing difficulties in asserting oneself in social or professional situations
+      - Dealing with unresolved conflicts or disagreements in relationships
+      - Feeling overlooked or undervalued in workplace environments
+      - Experiencing repeated instances of microaggressions or subtle forms of discrimination
+      - Dealing with bureaucratic red tape or inefficiencies in systems or processes
+      - Feeling invalidated or dismissed by mental health professionals
+      - Experiencing setbacks or failures in academic pursuits or educational goals
+      - Dealing with environmental factors that contribute to frustration or anger
+      - Feeling misunderstood or misrepresented in social or professional contexts
+      - Experiencing a lack of autonomy or control over one's own life decisions
+      - Dealing with repeated instances of betrayal or disloyalty in personal relationships
+      - Feeling overwhelmed by societal pressures or expectations related to success or achievement
+      - Experiencing repeated instances of neglect or abandonment in childhood or adulthood
+      - Dealing with power imbalances in personal or professional relationships
+      - Feeling invalidated or dismissed by friends or peers
+      - Experiencing repeated instances of rejection or exclusion in social settings
+      - Dealing with unaddressed grievances or unresolved conflicts in relationships
+      - Feeling unseen or invisible in social or professional environments
+      - Experiencing repeated instances of gaslighting or manipulation from others
+      - Dealing with systemic injustices or inequalities in society
+      - Feeling overwhelmed by emotional pain or trauma
+      - Experiencing a sense of hopelessness or despair about one's future
+
+  - intent: neutral
+    examples: |
+      - neutral.
+      - I'm feeling neither happy nor sad.
+      - I'm not really feeling anything right now.
+      - I'm in a neutral state of mind.
+      - I'm neither excited nor bored.
+      - I'm feeling pretty neutral about it.
+      - I'm not particularly enthusiastic or disinterested.
+      - I'm just neutral about the whole thing.
+      - I'm feeling kind of indifferent.
+      - I'm neither here nor there emotionally.
+      - I'm not really leaning towards any emotion.
+      - I'm feeling neither positive nor negative.
+      - I'm just feeling neutral, not really up or down.
+      - I'm in a sort of middle-ground emotionally.
+      - I'm not really feeling strongly one way or the other.
+      - I'm feeling pretty neutral about the outcome.
+      - I'm not feeling particularly passionate or apathetic.
+      - I'm just feeling sort of meh.
+      - I'm not really feeling much of anything.
+      - I'm neither thrilled nor upset.
+      - I'm feeling pretty neutral about the whole situation.
+      - I'm not really leaning towards any particular emotion.
+      - I'm feeling pretty even-keeled.
+      - I'm not really feeling any strong emotions right now.
+      - I'm just feeling neutral, neither here nor there.
+      - I'm feeling pretty middle-of-the-road.
+      - I'm not really feeling strongly one way or the other.
+      - I'm feeling pretty indifferent about it.
+      - I'm neither excited nor disappointed.
+      - I'm feeling pretty neutral about the whole thing.
+      - I'm not really feeling strongly about anything right now.
+      - I'm just feeling sort of neutral, not really feeling much.
+      - I'm not really feeling any particular emotion.
+      - I'm feeling pretty neutral, not too high or low.
+      - I'm neither thrilled nor upset about it.
+      - I'm feeling pretty neutral, not really feeling anything strong.
+      - I'm not really feeling any emotional attachment.
+      - I'm feeling pretty indifferent towards it.
+      - I'm not really feeling any strong feelings one way or the other.
+      - I'm feeling pretty neutral, not really feeling anything intense.
+      - I'm neither happy nor sad, just neutral.
+      - I'm feeling pretty balanced emotionally.
+      - I'm not really feeling any strong emotions at the moment.
+      - I'm feeling pretty neutral about it, not really caring either way.
+      - I'm not really feeling any strong reactions.
+      - I'm feeling pretty neutral, not really invested emotionally.
+      - I'm feeling pretty neutral, not really leaning towards any emotion.
+      - I'm not really feeling any excitement or disappointment.
+      - I'm feeling pretty neutral, not really feeling anything strongly.
+      - I'm not really feeling any strong emotions, just neutral.
+      - I'm feeling pretty neutral, not really feeling much of anything.
+
+  - intent: neutral_inform
+    examples: |
+      - Nothing special happened today.
+      - Just not feeling strongly about anything.
+      - Things are pretty average right now.
+      - No particular reason, just a normal day.
+      - Just going with the flow.
+      - Nothing particularly good or bad happened.
+      - Just feeling kinda 'meh' about everything.
+      - No big events to get excited or upset about.
+      - Nothing stands out as particularly interesting.
+      - Just feeling neutral about life in general.
+      - Nothing exciting to report.
+      - Just taking things as they come.
+      - Not feeling particularly emotional today.
+      - Nothing's really catching my attention.
+      - Just coasting through the day.
+      - Nothing's really sparking any strong feelings.
+      - No highs, no lows, just in between.
+      - Just feeling neutral, not much happening.
+      - Nothing to get worked up about.
+      - Just feeling content with the status quo.
+      - Not feeling particularly motivated or demotivated.
+      - Just another day, nothing special.
+      - Just feeling kinda neutral, you know?
+      - Nothing's really standing out right now.
+      - Just feeling okay, nothing more.
+      - No big changes, just business as usual.
+      - Just feeling indifferent about things.
+      - Not feeling strongly one way or the other.
+      - Just feeling pretty neutral about everything.
+      - Nothing's really grabbing my attention.
+      - Just feeling average, nothing to write home about.
+      - Nothing's really getting under my skin.
+      - Just feeling neutral, nothing to get excited about.
+      - Nothing's really sparking any strong emotions.
+      - Just feeling okay, nothing spectacular.
+      - Nothing's really making waves today.
+      - Just feeling kinda middle-of-the-road.
+      - Just feeling neutral, nothing to complain about.
+      - Nothing's really stirring up any strong feelings.
+      - Just feeling indifferent, not much happening.
+      - Just feeling neutral, nothing particularly exciting.
+      - Nothing's really standing out in a big way.
+      - Just feeling okay, nothing too exciting.
+      - Just feeling neutral, nothing to get upset about.
+      - Nothing's really getting my heart rate up.
+      - Just feeling pretty even-keeled today.
+      - Just feeling neutral, not much to say about it.
+      - Nothing's really setting off any alarms.
+
+  # - intent: fearful
+  #   examples: |
+  #     - I'm scared.
+  #     - I'm feeling afraid right now.
+  #     - I'm really nervous.
+  #     - I'm feeling anxious.
+  #     - I'm trembling with fear.
+  #     - I'm feeling terrified.
+  #     - I'm shaking with fright.
+  #     - I'm feeling uneasy.
+  #     - I'm feeling panicked.
+  #     - I'm filled with dread.
+  #     - I'm feeling jumpy.
+  #     - I'm terrified out of my wits.
+  #     - I'm scared stiff.
+  #     - I'm feeling apprehensive.
+  #     - I'm afraid for my safety.
+  #     - I'm feeling on edge.
+  #     - I'm having a panic attack.
+  #     - I'm paralyzed with fear.
+  #     - I'm feeling petrified.
+  #     - I'm trembling with apprehension.
+  #     - I'm feeling alarmed.
+  #     - I'm terrified beyond belief.
+  #     - I'm feeling like I'm in danger.
+  #     - I'm scared witless.
+  #     - I'm feeling a sense of impending doom.
+  #     - I'm feeling like I'm going to faint.
+  #     - I'm sweating with fear.
+  #     - I'm feeling like I can't catch my breath.
+  #     - I'm feeling like I can't breathe.
+  #     - I'm feeling like I'm going to pass out.
+  #     - I'm feeling like I'm going to be sick.
+  #     - I'm feeling like I'm losing control.
+  #     - I'm feeling like I'm trapped.
+  #     - I'm feeling like I'm going to die.
+  #     - I'm feeling like I'm going crazy.
+  #     - I'm feeling like I'm having a heart attack.
+  #     - I'm feeling like I'm being watched.
+  #     - I'm feeling like something bad is going to happen.
+  #     - I'm feeling like I'm not safe.
+  #     - I'm feeling like I'm being followed.
+  #     - I'm feeling like I'm being hunted.
+  #     - I'm feeling like I'm being haunted.
+  #     - I'm feeling like I'm being stalked.
+  #     - I'm feeling like I'm being threatened.
+  #     - I'm feeling like I'm being attacked.
+  #     - I'm feeling like I'm in a nightmare.
+  #     - I'm feeling like I'm in danger of my life.
+  #     - I'm feeling like I'm in mortal danger.
+  #     - I'm feeling like I'm in a horror movie.
+  #     - I'm feeling like I'm in a nightmare I can't wake up from.
+
+  # - intent: fear_inform
+  #   examples: |
+  #     - Fear of the dark.
+  #     - Fear of heights.
+  #     - Fear of spiders.
+  #     - Fear of snakes.
+  #     - Fear of public speaking.
+  #     - Fear of failure.
+  #     - Fear of the unknown.
+  #     - Fear of death.
+  #     - Fear of flying.
+  #     - Fear of confined spaces (claustrophobia).
+  #     - Fear of being alone.
+  #     - Fear of social rejection.
+  #     - Fear of losing a loved one.
+  #     - Fear of illness or disease.
+  #     - Fear of losing control.
+  #     - Fear of the future.
+  #     - Fear of ghosts or supernatural beings.
+  #     - Fear of violence or crime.
+  #     - Fear of financial instability.
+  #     - Fear of being judged or criticized.
+  #     - Fear of making mistakes.
+  #     - Fear of being embarrassed.
+  #     - Fear of being abandoned.
+  #     - Fear of animals.
+  #     - Fear of being in a car accident.
+  #     - Fear of natural disasters (earthquakes, hurricanes, etc.).
+  #     - Fear of public places (agoraphobia).
+  #     - Fear of being attacked.
+  #     - Fear of failure in relationships.
+  #     - Fear of being betrayed.
+  #     - Fear of the dark.
+  #     - Fear of failure.
+  #     - Fear of the unknown.
+  #     - Fear of commitment.
+  #     - Fear of rejection.
+  #     - Fear of change.
+  #     - Fear of losing control.
+  #     - Fear of being vulnerable.
+  #     - Fear of intimacy.
+  #     - Fear of confrontation.
+  #     - Fear of criticism.
+  #     - Fear of being judged.
+  #     - Fear of being inadequate.
+  #     - Fear of being misunderstood.
+  #     - Fear of being abandoned.
+  #     - Fear of disappointing others.
+  #     - Fear of not living up to expectations.
+  #     - Fear of being alone.
+  #     - Fear of the future.

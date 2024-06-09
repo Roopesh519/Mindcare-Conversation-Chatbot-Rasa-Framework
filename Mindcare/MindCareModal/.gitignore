@@ -1,0 +1,16 @@
+# Rasa-specific files and directories
+__pycache__/
+.rasa/
+logs/
+results/
+models/
+tests/
+rasa/
+rasa-sdk/
+
+# Virtual environment
+venv/
+.env/
+
+# Python-specific files
+*.pyc

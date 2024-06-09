@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<section>
+    {% include './user_navbar.html' %}
+</section>
+<div class="" style="margin-top: 110px;">
+</div>
+<div class="container  justify-content-center">
+    <!-- <div id="chart"></div> -->
+    <canvas id="emotionChart" width="800" height="300"></canvas>
+    <dvi class="text-center">
+        <h1>Weekly Progress</h1>
+    </dvi>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="{% static 'js/progress.js' %}"></script>
+
+{% endblock content %}

@@ -1,0 +1,145 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Anxiety disorder
+  steps:
+  - intent: anxiety
+  - action: utter_anxiety_response
+
+- rule: addressing about depression
+  steps:
+  - intent: depression
+  - action: utter_depression
+
+- rule: addressing about stress
+  steps:
+  - intent: stress
+  - action: utter_stress
+
+- rule: addressing about panic attacks
+  steps:
+  - intent: panic_attacks
+  - action: utter_panic_attack
+
+- rule: addressing about bipolar disorder
+  steps:
+  - intent: bipolar_disorder
+  - action: utter_bipolar
+
+- rule: addressing about ocd
+  steps:
+  - intent: obsessive_compulsive_disorder
+  - action: utter_ocd
+
+- rule: addressing about ptsd
+  steps:
+  - intent: post_traumatic_stress_disorder
+  - action: utter_ptsd
+
+- rule: addressing about eating disorders
+  steps:
+  - intent: eating_disorders
+  - action: utter_eating
+
+- rule: addressing about substance abuse
+  steps:
+  - intent: substance_abuse
+  - action: utter_substance_abuse
+
+- rule: addressing about self harm
+  steps:
+  - intent: self_harm
+  - action: utter_self_harm
+
+- rule: addressing about suicide
+  steps:
+  - intent: suicidal_thoughts
+  - action: utter_suicide
+
+- rule: addressing about body image issues
+  steps:
+  - intent: body_image_issues
+  - action: utter_body
+
+- rule: addressing about loneliness
+  steps:
+  - intent: loneliness
+  - action: utter_lonely
+
+- rule: addressing about grief
+  steps:
+  - intent: grief
+  - action: utter_grief
+
+- rule: addressing about relationship
+  steps:
+  - intent: relationship_issues
+  - action: utter_relationship
+
+- rule: addressing about parenting
+  steps:
+  - intent: parenting_challenges
+  - action: utter_parent
+
+- rule: addressing about financial stress
+  steps:
+  - intent: financial_stress
+  - action: utter_finance
+
+- rule: addressing about insomnia
+  steps:
+  - intent: insomnia
+  - action: utter_insomnia
+
+- rule: addressing about phobias
+  steps:
+  - intent: phobias
+  - action: utter_phobia
+
+- rule: addressing about personality issues
+  steps:
+  - intent: personality_disorders
+  - action: utter_personality
+
+- rule: addressing about attention deficit
+  steps:
+  - intent: attention_deficit
+  - action: utter_attention
+
+- rule: addressing about schizophrenia
+  steps:
+  - intent: schizophrenia
+  - action: utter_schizo
+
+- rule: addressing about bpd
+  steps:
+  - intent: borderline_personality_disorder
+  - action: utter_bpd
+
+- rule: addressing about social anxiety
+  steps:
+  - intent: social_anxiety
+  - action: utter_social
+
+- rule: giving motivation
+  steps:
+  - intent: motivation
+  - action: utter_motivation
+
+- rule: giving greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+

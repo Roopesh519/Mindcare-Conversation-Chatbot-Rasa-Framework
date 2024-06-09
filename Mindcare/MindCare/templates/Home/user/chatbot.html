@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<section>
+    {% include './user_navbar.html' %}
+</section>
+<input type="hidden" value="/media/{{request.session.userImage}}" id="imageUrl">
+<div class="container-fluid scrollable-div scroll" style="height: 100vh; background: linear-gradient(#2b1055, #7597de);">
+    <div class="content-block scroll overflow-auto" style="margin-top: 100px; margin-bottom: 100px; font-size: 20px">
+        <div class="chat-content mt-3 container scroll overflow-auto">
+            <!-- Messages goes here  -->
+        </div>
+    </div>
+
+    <div class="input-block fixed-bottom py-3 bg-light" >
+        <form id="chatInput" class="mx-5 my-2">
+            {% csrf_token %}
+            <div class="row align-middle mx-3">
+                <div class="col">
+                    <textarea class="form-control  w-100" id="chat_input" name="chat_input" rows="1"
+                        placeholder="  Message ..."></textarea>
+                </div>
+                <div class="col-1 col-md-2 col-lg-2">
+                    <button type="button" class="btn btn-outline-dark mx-2" id="voice_input">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-mic" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
+                            <path
+                                d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3" />
+                        </svg>
+                    </button>
+                    <button type="submit" class="btn btn-outline-dark mx-2" id="send_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-send-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="{% static 'js/chatbot.js' %}"></script>
+
+{% endblock content %}

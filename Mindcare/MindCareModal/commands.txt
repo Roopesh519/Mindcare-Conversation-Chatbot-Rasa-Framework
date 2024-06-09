@@ -1,0 +1,12 @@
+to train model
+
+rasa train nlu
+rasa train
+
+to start the server for api 
+
+rasa run --enable-api --cors "*"
+
+to run the action server
+
+rasa run actions

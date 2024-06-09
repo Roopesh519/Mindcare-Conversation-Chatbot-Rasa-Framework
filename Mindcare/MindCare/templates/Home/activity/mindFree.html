@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<section>
+  {% include 'Home/user/user_navbar.html' %}
+</section>
+<div class="video-container">
+    <video id="myVideo" autoplay loop>
+         <source src="/media/Activity/{{media}}" type="video/mp4" /> 
+    </video>
+      
+      <script>
+        var video = document.getElementById("myVideo");
+        video.volume = 1.0; // Set volume to full (1.0)
+      </script>
+      
+    <div class="caption">
+        <div class="text-center fixed-bottom mb-5 text-white">
+            <h1 id="timer">00:00:00</h1>
+            <button type="button" class="btn btn-warning px-4" id="resetBtn" style="display: none;">Reset</button>
+            <button type="button" class="btn btn-primary px-4" id="startBtn">Start</button>
+            <button type="button" class="btn btn-danger px-4" id="stopBtn">Stop</button>
+            <button type="button" class="btn btn-primary px-4" id="replayBtn" style="display: none;">Resume</button>
+
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/activity.js' %}"></script>
+
+
+{% endblock content %}

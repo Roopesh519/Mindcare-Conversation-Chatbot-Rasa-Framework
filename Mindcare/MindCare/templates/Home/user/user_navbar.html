@@ -1,0 +1,277 @@
+{% include './profile.html' %}
+{% load static %}
+<nav style="background-color: #1c0522;" class="navbar navbar-expand-lg bg-primary-subtle py-4 fixed-top shadow-sm ">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="" style="color: #1c0522; font-weight: 700; text-decoration: solid; font-size: 2em; font-family: fantasy; text-transform: uppercase; letter-spacing: 2px;">MindCare</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" style="margin-top: 15px;">
+                <style>
+                    .navbar-nav .nav-link {
+                        color: #000000; /* Set text color to white */
+                        /* text-decoration: solid; */
+                    }
+                
+                    .navbar-nav .nav-link:hover,
+                    .navbar-nav .nav-link.active {
+                        background-color: #000000; /* Set background color to white on hover and when active */
+                        color: #ffffff; /* Set text color to black on hover and when active */
+                        border-radius: 20px;
+                        padding: 6px 15px;
+                    }
+
+                </style>
+                
+                <li class="nav-item me-3">
+                    <a class="nav-link  px-2" aria-current="page" style="font-size: 20px;" href="{% url 'home'%}">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link  px-2" style="font-size: 20px;"  href="{% url 'chatbot'%}">Chatbot</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link  px-2" style="font-size: 20px;"  href="{% url 'activity'%}">Activities</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link  px-2" style="font-size: 20px;"  href="{% url 'progress' %}">Progress</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class=" nav-link  px-2" style="font-size: 20px;"  href="{% url 'professionals' %}">Professionals</a>
+                </li>
+                <li class="nav-item me-5">
+
+                    <style>
+                            .music-player {
+                            position: relative;
+                            display: inline-block;
+                            margin-top: 5px;
+                            }
+                    
+                            .switch {
+                            position: relative;
+                            display: inline-block;
+                            width: 60px;
+                            height: 34px;
+                            }
+                    
+                            .switch input {
+                            opacity: 0;
+                            width: 0;
+                            height: 0;
+                            }
+                    
+                            .slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: #ccc;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                            border-radius: 34px; /* Updated border radius */
+                            }
+                    
+                            .slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: rgb(0, 0, 0);
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                            border-radius: 50%;
+                            }
+                    
+                            input:checked + .slider {
+                            background-color: #000000;
+                            }
+                    
+                            input:focus + .slider {
+                            box-shadow: 0 0 1px #dcdcdd;
+                            }
+                    
+                            input:checked + .slider:before {
+                            -webkit-transform: translateX(20px); /* Updated translation */
+                            -ms-transform: translateX(20px); /* Updated translation */
+                            transform: translateX(20px); /* Updated translation */
+                            }
+                    
+                            /* Rounded sliders */
+                            .slider.round {
+                            border-radius: 10px; /* Updated border radius */
+                            }
+                    
+                            .slider.round:before {
+                            border-radius: 50%;
+                            }
+
+                    </style>
+
+                        <div class="music-player">
+                            <label class="switch">
+                                <input type="checkbox" id="toggleMusic">
+                                <span class="slider"></span>
+                            </label>
+                            <audio id="myAudio">
+                                <source src="{% static '/images/music1.mp3' %}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        
+                        <script>
+                            // Get the toggleMusic checkbox and the audio element
+                            const toggleMusic = document.getElementById("toggleMusic");
+                            const myAudio = document.getElementById("myAudio");
+                        
+                            // Function to play audio
+                            function playAudio() {
+                                myAudio.play();
+                            }
+                        
+                            // Function to pause audio
+                            function pauseAudio() {
+                                myAudio.pause();
+                            }
+                        
+                            // Check if music was playing before
+                            const musicState = localStorage.getItem('musicState');
+                            if (musicState === 'playing') {
+                                const musicTime = localStorage.getItem('musicTime');
+                                if (musicTime) {
+                                    myAudio.currentTime = parseFloat(musicTime);
+                                    playAudio(); // If it was playing, resume playback from saved time
+                                }
+                                toggleMusic.checked = true; // Check the checkbox
+                            }
+                        
+                            // Event listener for toggleMusic checkbox change
+                            toggleMusic.addEventListener("change", function() {
+                                if (this.checked) {
+                                    playAudio();
+                                    // Store the state in localStorage
+                                    localStorage.setItem('musicState', 'playing');
+                                } else {
+                                    pauseAudio();
+                                    // Store the state in localStorage
+                                    localStorage.setItem('musicState', 'paused');
+                                }
+                            });
+                        
+                            // Event listener for audio ended (loop playback)
+                            myAudio.addEventListener('ended', function() {
+                                // Restart the audio
+                                myAudio.currentTime = 0;
+                                myAudio.play();
+                            });
+                        
+                            // Save the current playback time when the page unloads
+                            window.addEventListener('beforeunload', function() {
+                                if (toggleMusic.checked) {
+                                    localStorage.setItem('musicTime', myAudio.currentTime);
+                                }
+                            });
+                        </script>
+                          
+                </li>
+                <li class="nav-item me-3">
+                    
+                    <button id="language-button" onclick="toggleTranslateElement()">Language</button>
+                    <div id="google_translate_element"></div>
+
+                    <script>
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement(
+                                { pageLanguage: 'en' },
+                                'google_translate_element'
+                            );
+                        }
+                
+                        function toggleTranslateElement() {
+                            var translateElement = document.getElementById('google_translate_element');
+                            if (translateElement.style.display === 'none') {
+                                translateElement.style.display = 'block';
+                            } else {
+                                translateElement.style.display = 'none';
+                            }
+                        }
+
+                    </script>
+                
+                    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                     
+                    <style>
+                        #google_translate_element {
+                            display: none;
+                        }
+
+                        .buttons-container {
+                            width: 100%;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            }
+
+                            button {
+                            background: #1c0522;
+                            color: white; /* Set initial text color to white */
+                            border: solid 2px black;
+                            padding: .375em 1.125em;
+                            font-size: 1rem;
+                            border-radius: 20px;
+                            transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+                            }
+
+                            button:hover {
+                            background-color: #fff; /* Change background color on hover */
+                            color: black; /* Change text color to black on hover */
+                            }
+
+                    </style>
+                    
+                </li>
+                <li class="nav-item me-5">
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center  text-decoration-none " href="#" id="avatarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/media/{{request.session.userImage}}" alt="User Avatar"
+                                class="rounded-circle me-2 bg-light border border-1 border-dark p-1" width="50"
+                                height="50">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="avatarDropdown">
+                            <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#profile_edit" role="button"
+                                    aria-controls="profile_edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-gear" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                                    </svg>
+                                    Profile
+                                </a></li>
+
+                            <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="{% url 'logout' %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-power" viewBox="0 0 16 16">
+                            <path d="M7.5 1v7h1V1z" />
+                            <path
+                                d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
+                        </svg>
+                        Sign Out
+                    </a></li>
+
+            </ul>
+        </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>

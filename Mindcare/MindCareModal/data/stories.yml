@@ -1,0 +1,113 @@
+
+version: "3.1"
+
+stories:
+
+
+
+  - story: User is Sad - Interactive Questions
+    steps:
+      - intent: sad
+      - action: utter_sad_questions
+
+      - intent: sad_inform
+      - action: utter_sad_advices
+
+      - intent: music
+        entities:
+          - response: "user's response"  # Make sure to use double quotes around the response
+      - action: action_sad_response
+
+      - intent: cheer
+      - action: utter_cheer_up
+
+      - intent: thanks
+      - action: utter_response_to_thanks
+
+      - intent: goodbye
+      - action: utter_goodbye
+
+  
+  - story: User is Happy - Interactive Conversation  # Updated story name
+    steps:
+      - intent: happy
+      - action: utter_happy_reason
+      - intent: happy_inform
+      - action: utter_agree
+
+      - intent: music
+        entities:
+          - response: "user's response"  # Make sure to use double quotes around the response
+      - action: action_happy_response
+
+      - intent: thanks
+      - action: utter_response_to_thanks
+
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: User is Angry - Interactive Questions
+    steps:
+      - intent: angry
+      - action: utter_angry_reason
+
+      - intent: angry_inform
+      - action: utter_angry_advices
+
+      - intent: music
+        entities:
+          - response: "user's response"  # Make sure to use double quotes around the response
+      - action: action_angry_response
+
+      - intent: thanks
+      - action: utter_response_to_thanks
+
+      - intent: goodbye
+        entities:
+          - response: "user's response"  # Make sure to use double quotes around the response
+      - action: utter_goodbye
+
+
+  - story: User is Neutral - Interactive Questions
+    steps:
+      - intent: neutral
+      - action: utter_neutral
+
+      - intent: neutral_inform
+      - action: utter_neutral_advices
+
+      - intent: music
+        entities:
+          - response: "user's response"  # Make sure to use double quotes around the response
+      - action: action_neutral_response
+
+      - intent: thanks
+      - action: utter_response_to_thanks
+
+      - intent: goodbye
+        entities:
+          - response: "user's response"  # Make sure to use double quotes around the response
+      - action: utter_goodbye
+
+  # - story: User is fearful - Interactive Questions
+  #   steps:
+  #     - intent: fearful
+  #     - action: utter_fearful
+
+  #     - intent: fear_inform
+  #     - action: utter_fear_advices
+
+  #     - intent: fear_inform
+  #       entities:
+  #         - response: "user's response"  # Make sure to use double quotes around the response
+  #     - action: action_fearful_response
+
+  #     - intent: thanks
+  #     - action: utter_response_to_thanks
+
+  #     - intent: goodbye
+  #       entities:
+  #         - response: "user's response"  # Make sure to use double quotes around the response
+  #     - action: utter_goodbye
+
+  

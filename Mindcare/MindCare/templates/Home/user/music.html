@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+<nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb" class=" bg-light align-middle shadow-sm">
+    <div class="row container-fluid d-flex align-items-center justify-content-center">
+        <div class="col-auto me-auto ms-5 mt-2">
+            <h4 class="text-dark">Home</h4>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home'%}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'chatbot'%}">Chatbot</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Music</li>
+            </ol>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid mt-4">
+    <iframe style="border-radius:16px" src="{{music}}" width="100%" height="470" frameBorder="0" allowfullscreen="-.27l"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</div>
+{% endblock content %}

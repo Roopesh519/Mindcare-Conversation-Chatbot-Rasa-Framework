@@ -1,0 +1,48 @@
+
+
+<div class="fixed-bottom" >
+    <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb" class=" bg-light align-middle shadow-sm">
+        <div class="row container-fluid d-flex align-items-center justify-content-center">
+            <div  class="col-auto mx-auto mt-2 text-center">
+                <span class="text-muted" ><span id="quotePlaceholder"></span></span>    
+            </div>       
+        </div>
+    </nav>
+</div>
+
+<script>
+    // Array of quotes
+    var quotes = [
+        "Every day may not be good, but there's something good in every day",
+        "The sun himself is weak when he first rises, and gathers strength and courage as the day gets on",
+        "You are never too old to set another goal or to dream a new dream",
+        "Believe you can and you're halfway there",
+        "The best way to predict the future is to create it",
+        "You've got to get up every morning with determination if you're going to go to bed with satisfaction",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts",
+        "The only way to do great work is to love what you do",
+        "In the middle of difficulty lies opportunity",
+        "The greatest glory in living lies not in never falling, but in rising every time we fall",
+        "Don't watch the clock; do what it does. Keep going",
+        "The way I see it, if you want the rainbow, you gotta put up with the rain",
+        "Happiness is not by chance, but by choice",
+        "The only limit to our realization of tomorrow will be our doubts of today",
+        "You are braver than you believe, stronger than you seem, and smarter than you think",
+        "Every accomplishment starts with the decision to try",
+        "Life is like riding a bicycle. To keep your balance, you must keep moving",
+        "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence",
+        "The best way to cheer yourself up is to try to cheer somebody else up",
+        "Keep your face always toward the sunshine and shadows will fall behind you",
+        // Add more quotes as needed
+    ];
+
+    // Function to randomly select a quote and update the placeholder
+    function displayRandomQuote() {
+        var randomIndex = Math.floor(Math.random() * quotes.length);
+        var quote = quotes[randomIndex];
+        document.getElementById("quotePlaceholder").innerText = quote;
+    }
+
+    // Call the function when the page loads
+    window.onload = displayRandomQuote;
+</script>

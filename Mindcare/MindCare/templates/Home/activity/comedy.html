@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .video-container {
+        width: 1000px;
+        height: 600px;
+        position: relative;
+    }
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>
+
+<body>
+<div class="video-container">
+    <iframe width="1000" height="600" src="https://www.youtube.com/embed/1wXaCpU09iI?si=X1v2rJ0ek3-yEslw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+{% endblock content %}
+
