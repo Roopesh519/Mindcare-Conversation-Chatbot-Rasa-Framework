@@ -73,11 +73,15 @@ Intent classification is performed to map input text to predefined intents. The 
 
 To set up the project locally on Windows using Command Prompt, follow these steps:
 
+#### Prerequisites
+
+Python 3.8
+
 ### Command Prompt 1
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/mental-health-intervention-system.git
+   git clone https://github.com/Roopesh519/Mindcare.git
    cd Mindcare
    ```
 
@@ -93,12 +97,12 @@ To set up the project locally on Windows using Command Prompt, follow these step
 
 4. Install the required dependencies:
    ```sh
-   pip install -r requirements.txt
+   pip install -r requirement.txt
    ```
 
 5. Navigate to the Rasa model directory:
    ```sh
-   cd Mindcare/MindCareModal
+   cd Mindcare\MindCareModal
    ```
 
 6. Run the Rasa server with API and CORS enabled:
