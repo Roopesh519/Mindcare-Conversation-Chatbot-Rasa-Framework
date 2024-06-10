@@ -1,3 +1,5 @@
 This is the drive link to download XAMP Server
 
 https://drive.google.com/drive/folders/1VWBui22ZbwpNicrmTKjjtMuAU2Eyn0sb?usp=drive_link
+
+After completed the Xamp setup import the the database "mind_care" in phpMyAdmin. Save database name as mind_care itself.
