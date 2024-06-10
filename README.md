@@ -84,8 +84,8 @@ Xamp Server
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Roopesh519/Mindcare.git
-   cd Mindcare
+   git clone https://github.com/Roopesh519/Mindcare-Conversation-Chatbot-Rasa-Framework.git
+   cd Mindcare-Conversation-Chatbot-Rasa-Framework
    ```
 
 2. Create a virtual environment named `venv`:
@@ -117,7 +117,7 @@ Xamp Server
 
 1. Open a new Command Prompt and navigate to the cloned repository directory:
    ```sh
-   cd path\to\Mindcare
+   cd path\to\Mindcare-Conversation-Chatbot-Rasa-Framework
    ```
 
 2. Activate the virtual environment:
@@ -139,7 +139,7 @@ Xamp Server
 
 1. Open another new Command Prompt and navigate to the cloned repository directory:
    ```sh
-   cd path\to\Mindcare
+   cd path\to\Mindcare-Conversation-Chatbot-Rasa-Framework
    ```
 
 2. Activate the virtual environment:
