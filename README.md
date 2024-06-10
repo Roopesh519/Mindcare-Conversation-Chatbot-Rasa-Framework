@@ -106,7 +106,7 @@ Xamp Server
 
 5. Navigate to the Rasa model directory:
    ```sh
-   cd Mindcare\MindCareModal
+   cd MindCareModal
    ```
 
 6. Run the Rasa server with API and CORS enabled:
