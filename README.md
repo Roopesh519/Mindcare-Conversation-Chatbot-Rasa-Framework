@@ -1,4 +1,4 @@
-# Mental Health Intervention System
+# MindCare: A Mental Health Intervention System Using Linguistic Intelligence
 
 ## Overview
 
