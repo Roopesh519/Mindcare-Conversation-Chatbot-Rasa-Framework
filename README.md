@@ -100,6 +100,7 @@ Xamp Server
 
 4. Install the required dependencies:
    ```sh
+   cd Mindcare
    pip install -r requirement.txt
    ```
 
