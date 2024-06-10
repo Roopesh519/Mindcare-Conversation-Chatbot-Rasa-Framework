@@ -71,39 +71,97 @@ Intent classification is performed to map input text to predefined intents. The 
 
 ## Installation
 
-To set up the project locally, follow these steps:
+To set up the project locally on Windows using Command Prompt, follow these steps:
+
+### Command Prompt 1
 
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/mental-health-intervention-system.git
-   cd mental-health-intervention-system
+   cd Mindcare
    ```
 
-2. Install dependencies:
+2. Create a virtual environment named `venv`:
+   ```sh
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+   ```sh
+   venv\Scripts\activate
+   ```
+
+4. Install the required dependencies:
    ```sh
    pip install -r requirements.txt
    ```
 
-3. Set up Rasa:
+5. Navigate to the Rasa model directory:
    ```sh
-   rasa init
+   cd Mindcare/MindCareModal
    ```
 
-4. Run the chatbot:
+6. Run the Rasa server with API and CORS enabled:
    ```sh
-   rasa run
+   rasa run --enable-api --cors "*"
+   ```
+
+### Command Prompt 2
+
+1. Open a new Command Prompt and navigate to the cloned repository directory:
+   ```sh
+   cd path\to\Mindcare
+   ```
+
+2. Activate the virtual environment:
+   ```sh
+   venv\Scripts\activate
+   ```
+
+3. Navigate to the Rasa model directory:
+   ```sh
+   cd Mindcare/MindCareModal
+   ```
+
+4. Run the Rasa action server:
+   ```sh
+   rasa run actions
+   ```
+
+### Command Prompt 3
+
+1. Open another new Command Prompt and navigate to the cloned repository directory:
+   ```sh
+   cd path\to\Mindcare
+   ```
+
+2. Activate the virtual environment:
+   ```sh
+   venv\Scripts\activate
+   ```
+
+3. Navigate to the Django application directory:
+   ```sh
+   cd Mindcare/MindCare
+   ```
+
+4. Run the Django development server:
+   ```sh
+   python manage.py runserver
    ```
 
 ## Usage
 
-1. Start the chatbot server:
-   ```sh
-   rasa run
-   ```
+1. **Start the Rasa server**: Follow the steps in Command Prompt 1.
+2. **Start the Rasa action server**: Follow the steps in Command Prompt 2.
+3. **Start the Django server**: Follow the steps in Command Prompt 3.
 
-2. Interact with the chatbot using the Rasa shell:
-   ```sh
-   rasa shell
-   ```
+You can now interact with the chatbot and use the mental health intervention system through the web interface provided by the Django server.
 
-3. Use the provided functionalities to track progress, get activity and music recommendations, and consult with professionals.
+## Contributing
+
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
