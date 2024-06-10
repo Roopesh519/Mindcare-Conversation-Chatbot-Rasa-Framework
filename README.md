@@ -77,6 +77,7 @@ To set up the project locally on Windows using Command Prompt, follow these step
 
 ##### Note: You can download these from Prerequisites folder
 Python 3.8.10
+
 Xamp Server
 
 ### Command Prompt 1
