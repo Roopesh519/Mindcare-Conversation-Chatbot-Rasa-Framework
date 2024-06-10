@@ -76,6 +76,7 @@ To set up the project locally on Windows using Command Prompt, follow these step
 #### Prerequisites
 
 Python 3.8
+Xamp Server
 
 ### Command Prompt 1
 
@@ -124,7 +125,7 @@ Python 3.8
 
 3. Navigate to the Rasa model directory:
    ```sh
-   cd Mindcare/MindCareModal
+   cd Mindcare\MindCareModal
    ```
 
 4. Run the Rasa action server:
@@ -146,7 +147,7 @@ Python 3.8
 
 3. Navigate to the Django application directory:
    ```sh
-   cd Mindcare/MindCare
+   cd Mindcare\MindCare
    ```
 
 4. Run the Django development server:
