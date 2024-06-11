@@ -1,5 +1,5 @@
 # MindCare: A Mental Health Intervention System Using Linguistic Intelligence
-
+<img href="https://drive.google.com/file/d/1LxgoZhJpaTjaHIyvRNNjvWPsK7ljcEmn/view?usp=drive_link"/>
 ## Overview
 
 This repository contains the implementation of a Mood Classification and Recommendation System using a dataset and chatbot. The system provides mental health support and guidance through pre-programmed responses, emotional information extraction, activity recommendations, and music recommendations.
