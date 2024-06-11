@@ -78,7 +78,7 @@ To set up the project locally on Windows using Command Prompt, follow these step
 ##### Note: You can download these from Prerequisites folder
 Python 3.8.10
 
-Xamp Server
+Xamp Server | <a href="https://drive.google.com/drive/folders/1VWBui22ZbwpNicrmTKjjtMuAU2Eyn0sb?usp=drive_link">Click here to download</a>
 
 ### Command Prompt 1
 
