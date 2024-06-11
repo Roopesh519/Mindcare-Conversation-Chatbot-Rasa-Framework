@@ -75,10 +75,12 @@ To set up the project locally on Windows using Command Prompt, follow these step
 
 #### Prerequisites
 
-##### Note: You can download these from Prerequisites folder
-Python 3.8.10
+##### Note: You can download these from Prerequisites folder. This project works on Windows.
 
-Xamp Server | <a href="https://drive.google.com/drive/folders/1VWBui22ZbwpNicrmTKjjtMuAU2Eyn0sb?usp=drive_link">Click here to download</a>
+Python 3.8.10 <a href="https://www.python.org/downloads/release/python-3810/">Click here to download Python | Windows installer (64-bit) </a>
+
+Xamp Server | <a href="https://drive.google.com/drive/folders/1VWBui22ZbwpNicrmTKjjtMuAU2Eyn0sb?usp=drive_link">Click here to download XAMP and Database</a> <br>
+After completing the installation and setup, create new database with the name 'mind_care' and import the database on phpMyAdmin.  
 
 ### Command Prompt 1
 
