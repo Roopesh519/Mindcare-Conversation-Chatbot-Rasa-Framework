@@ -73,14 +73,6 @@ Intent classification is performed to map input text to predefined intents. The 
 - **Secure Authentication**: Ensures secure access through credential validation.
 - **Progress Visualization**: Users can visualize their mental health progress over time.
 
-
-## Demo Video
-
-Watch the demo video to see how the system works:
-
-<iframe src="https://roopesh-s.netlify.app/assets/images/mindcare/mindcare.mp4" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-
-
 ## Installation
 
 To set up the project locally on Windows using Command Prompt, follow these steps:
