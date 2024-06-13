@@ -17,6 +17,7 @@ This repository contains the implementation of a Mood Classification and Recomme
   - [Rasa Framework](#rasa-framework)
     - [Natural Language Understanding (NLU)](#natural-language-understanding-nlu)
 - [Features](#features)
+- [Demo Video](#demo-video)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
