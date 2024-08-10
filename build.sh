@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install Python (this assumes Vercel has Ubuntu or Debian-like environment)
-sudo apt-get update
-sudo apt-get install -y python3 python3-pip python3-venv
+apt-get update
+apt-get install -y python3 python3-pip python3-venv
 
 # Create a virtual environment
 python3 -m venv venv
@@ -13,7 +13,7 @@ source venv/bin/activate
 pip install --upgrade pip
 
 # Install Python dependencies
-pip install -r Mindcare\requirement.txt
+pip install -r Mindcare/requirement.txt
 
 # Navigate to the directory where Rasa and Django are located
 cd Mindcare/MindCareModal
