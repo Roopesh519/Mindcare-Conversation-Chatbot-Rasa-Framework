@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "vercel-build": "cd Mindcare && python -m venv venv && venv\\Scripts\\activate && pip install -r requirements.txt && cd MindCareModal && rasa run --enable-api --cors '*' & rasa run actions & cd ..\\MindCare && python manage.py runserver"
+    }
+  }
+  
