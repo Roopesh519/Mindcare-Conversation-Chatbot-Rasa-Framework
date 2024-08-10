@@ -13,9 +13,6 @@
         "src": "/(.*)",
         "dest": "Mindcare/MindCare/manage.py"
       }
-    ],
-    "hooks": {
-      "build": "python custom-setup.py"
-    }
+    ]
   }
   
