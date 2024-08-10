@@ -10,8 +10,10 @@ python3 -m venv venv
 # Activate the virtual environment
 source venv/bin/activate
 
+pip install --upgrade pip
+
 # Install Python dependencies
-pip install -r requirements.txt
+pip install -r Mindcare\requirement.txt
 
 # Navigate to the directory where Rasa and Django are located
 cd Mindcare/MindCareModal
