@@ -1,18 +1,19 @@
 {
-    "builds": [
-      {
-        "src": "Mindcare/MindCare/manage.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "Mindcare/MindCare/manage.py"
-      }
-    ]
+  "builds": [
+    {
+      "src": "Mindcare/MindCare/manage.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Mindcare/MindCare/manage.py"
+    }
+  ],
+  "functions": {
+    "api/*": {
+      "runtime": "python3.9"
+    }
   }
-  
+}

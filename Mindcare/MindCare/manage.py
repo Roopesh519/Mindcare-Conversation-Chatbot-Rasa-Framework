@@ -20,3 +20,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Add this at the end of manage.py
+from MindCare.wsgi import application as app
